@@ -1,6 +1,7 @@
 package com.twu.biblioteca;
 
 public class Book {
+
     private final String ISBN;
     private final String title;
 
@@ -15,6 +16,11 @@ public class Book {
 
     public String getTitle() {
         return title;
+    }
+
+    @Override
+    public String toString() {
+        return title + " - " + ISBN;
     }
 
     @Override
