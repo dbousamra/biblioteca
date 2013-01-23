@@ -20,7 +20,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return title + " - " + ISBN;
+        return ISBN + " - " + title;
     }
 
     @Override

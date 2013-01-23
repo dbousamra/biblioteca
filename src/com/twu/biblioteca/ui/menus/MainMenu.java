@@ -6,13 +6,13 @@ public class MainMenu implements MenuItem {
     public String output() {
         return "1.) Browse Books\n" +
                "2.) View membership details\n" +
-               "3.) Exit\n";
+               "3.) Exit";
     }
 
     public InputHandler requestInput() {
         return new InputHandler() {
             public String promptUser() {
-                return "Please select an option:\n";
+                return "Please select an option:";
             }
 
             public MenuItem handleInput(String input) {

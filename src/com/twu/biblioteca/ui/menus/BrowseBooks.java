@@ -1,13 +1,17 @@
 package com.twu.biblioteca.ui.menus;
 
+import com.google.common.base.Joiner;
 import com.twu.biblioteca.ui.InputHandler;
+import com.twu.biblioteca.Library;
 import com.twu.biblioteca.ui.MenuItem;
 
 public class BrowseBooks implements MenuItem {
 
+    private Library library = Library.getInstance();
+
     @Override
     public String output() {
-        return "BROWSING BOOKS\n";
+        return Joiner.on('\n').join(library.getRegistrationManager().getAllBooks());
     }
 
     @Override

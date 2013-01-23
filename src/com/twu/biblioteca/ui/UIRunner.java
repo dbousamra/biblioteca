@@ -1,23 +1,26 @@
 package com.twu.biblioteca.ui;
 
+import com.twu.biblioteca.Library;
+import com.twu.biblioteca.ui.menus.MainMenu;
+
 import java.io.BufferedReader;
-import java.io.Console;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class UIRunner {
 
-    private final MenuItem start;
+    private final MenuItem startingMenu;
 
-    public UIRunner(MenuItem start) {
-        this.start = start;
+    public UIRunner(MenuItem startingMenu) {
+        this.startingMenu = startingMenu;
     }
 
     public void run() {
-        Console console = System.console();
-        MenuItem currentMenu = this.start;
+        MenuItem currentMenu = this.startingMenu;
         while(true) {
+            System.out.println("\n");
             System.out.println(currentMenu.output());
+            System.out.println("=======================================");
             System.out.println(currentMenu.requestInput().promptUser());
 
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
