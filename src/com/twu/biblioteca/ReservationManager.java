@@ -1,5 +1,8 @@
 package com.twu.biblioteca;
 
+import com.google.common.base.Predicate;
+import com.google.common.collect.Iterables;
+
 import java.util.Collections;
 import java.util.Map;
 import java.util.LinkedHashMap;
@@ -33,6 +36,15 @@ public class ReservationManager {
             return false;
         }
     }
+
+//    public Book getBookByISBN(String isbn) {
+//        Iterables.find(new Predicate<Book>(isbn) {
+//            @Override
+//            public boolean apply(Book book) {
+//                return book.getISBN().equals(isbn);
+//            }
+//        }, this.getAllBooks());
+//    }
 
     public Set<Book> getAllBooks() {
         return Collections.unmodifiableSet(this.bookCollection.keySet());

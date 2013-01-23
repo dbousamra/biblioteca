@@ -15,6 +15,12 @@ public class UIRunner {
         this.startingMenu = startingMenu;
     }
 
+    private void clearConsole() {
+        for (int i = 0; i < 100; i++) {
+            System.out.println();
+        }
+    }
+
     public void run() {
         MenuItem currentMenu = this.startingMenu;
         while(true) {
@@ -28,8 +34,9 @@ public class UIRunner {
                 String input = br.readLine();
                 currentMenu = currentMenu.requestInput().handleInput(input);
             } catch (IOException e) {
-               throw new RuntimeException("Unable to read input from user");
+                throw new RuntimeException("Unable to read input from user");
             }
+            clearConsole();
         }
     }
 }
