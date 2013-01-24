@@ -17,7 +17,7 @@ public final class Library {
         this.registrationManager.addBook(new Book("9780694014361", "The Hobbit"));
     }
 
-    public UserManager getUm() {
+    public UserManager getUserManager() {
         return userManager;
     }
 

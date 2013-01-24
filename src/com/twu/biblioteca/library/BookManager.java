@@ -7,7 +7,7 @@ import java.util.*;
 
 public class BookManager extends Manager<String, Book> {
 
-    private Set<Book> reserved = new HashSet<Book>();
+    private final Set<Book> reserved = new HashSet<Book>();
 
     /*
     Helper method for books.

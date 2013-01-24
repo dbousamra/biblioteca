@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Manager<K, V> {
 
-    private Map<K, V> contents = new HashMap<K, V>();
+    private final Map<K, V> contents = new HashMap<K, V>();
 
     public V getItem(K key) {
         return contents.get(key);
