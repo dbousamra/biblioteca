@@ -1,9 +1,15 @@
 package com.twu.biblioteca.ui.menus;
 
+import com.twu.biblioteca.Library;
 import com.twu.biblioteca.ui.InputHandler;
 import com.twu.biblioteca.ui.MenuItem;
 
 public class ReserveBookMenu extends BrowseBooks {
+
+
+    public ReserveBookMenu(Library library) {
+        super(library);
+    }
 
     @Override
     public InputHandler requestInput() {
@@ -15,7 +21,7 @@ public class ReserveBookMenu extends BrowseBooks {
 
             @Override
             public MenuItem handleInput(String input) {
-                return new MainMenu();
+                return new MainMenu(library);
             }
         };
     }

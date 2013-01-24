@@ -1,20 +1,24 @@
 package com.twu.biblioteca.ui.menus;
 
 import com.google.common.base.Joiner;
-import com.twu.biblioteca.Book;
+import com.twu.biblioteca.items.Book;
 import com.twu.biblioteca.ui.InputHandler;
 import com.twu.biblioteca.Library;
 import com.twu.biblioteca.ui.MenuItem;
 
-import java.util.Set;
+import java.util.Collection;
 
 public class BrowseBooks implements MenuItem {
 
-    protected Library library = Library.getInstance();
+    protected final Library library;
+
+    public BrowseBooks(Library library) {
+        this.library = library;
+    }
 
     @Override
     public String output() {
-        Set<Book> books = library.getRegistrationManager().getAllBooks();
+        Collection<Book> books = library.getRegistrationManager().getAllItems();
         if (!books.isEmpty()) {
             return Joiner.on('\n').join(books);
         } else {
@@ -35,11 +39,11 @@ public class BrowseBooks implements MenuItem {
             public MenuItem handleInput(String input) {
                 int menuItem = Integer.parseInt(input);
                 if (menuItem == 1) {
-                    return new ReserveBookMenu();
+                    return new ReserveBookMenu(library);
                 } else if (menuItem == 2) {
-                    return new MainMenu();
+                    return new MainMenu(library);
                 } else {
-                    return new MainMenu();
+                    return new MainMenu(library);
                 }
             }
         };

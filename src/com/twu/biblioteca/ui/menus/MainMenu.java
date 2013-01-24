@@ -1,7 +1,14 @@
 package com.twu.biblioteca.ui.menus;
+import com.twu.biblioteca.Library;
 import com.twu.biblioteca.ui.*;
 
 public class MainMenu implements MenuItem {
+
+    private final Library library;
+
+    public MainMenu(Library library) {
+        this.library = library;
+    }
 
     public String output() {
         return "1.) Browse Books\n" +
@@ -18,11 +25,11 @@ public class MainMenu implements MenuItem {
             public MenuItem handleInput(String input) {
                 int menuItem = Integer.parseInt(input);
                 if (menuItem == 1) {
-                    return new BrowseBooks();
+                    return new BrowseBooks(library);
                 } else if (menuItem == 2) {
-                    return new ViewUserDetails();
+                    return new ViewUserDetails(library);
                 } else {
-                    return new MainMenu();
+                    return new MainMenu(library);
                 }
             }
         };

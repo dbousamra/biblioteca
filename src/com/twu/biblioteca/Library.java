@@ -1,28 +1,27 @@
 package com.twu.biblioteca;
 
 
+import com.twu.biblioteca.items.Book;
+import com.twu.biblioteca.library.BookManager;
+import com.twu.biblioteca.users.UserManager;
+
 public final class Library {
-    private static final Library instance = new Library();
-    private final ReservationManager registrationManager;
+    private final BookManager registrationManager;
     private final UserManager userManager;
 
-    private Library() {
-        this.registrationManager = new ReservationManager();
+    public Library() {
+        this.registrationManager = new BookManager();
         this.userManager = new UserManager();
-        this.registrationManager.addReservable(new Book("9780684801520", "The Great Gatsby"));
-        this.registrationManager.addReservable(new Book("9780201310054", "Effective Java"));
-        this.registrationManager.addReservable(new Book("9780694014361", "The Hobbit"));
-    }
-
-    public static Library getInstance() {
-        return instance;
+        this.registrationManager.addBook(new Book("9780684801520", "The Great Gatsby"));
+        this.registrationManager.addBook(new Book("9780201310054", "Effective Java"));
+        this.registrationManager.addBook(new Book("9780694014361", "The Hobbit"));
     }
 
     public UserManager getUm() {
         return userManager;
     }
 
-    public ReservationManager getRegistrationManager() {
+    public BookManager getRegistrationManager() {
         return registrationManager;
     }
 }
