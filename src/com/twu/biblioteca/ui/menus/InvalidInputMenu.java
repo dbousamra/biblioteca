@@ -7,16 +7,14 @@ import com.twu.biblioteca.ui.MenuItem;
 public class InvalidInputMenu implements MenuItem {
 
     private final Library library;
-    private final MenuItem previous;
 
-    public InvalidInputMenu(Library library, MenuItem previous) {
+    public InvalidInputMenu(Library library) {
         this.library = library;
-        this.previous = previous;
     }
 
     @Override
     public String output() {
-        return "Please Select a valid option!!";
+        return "Please Select a valid option!";
     }
 
     @Override

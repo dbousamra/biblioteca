@@ -33,7 +33,7 @@ public class MainMenu implements MenuItem {
                 } else if (menuItem == 3) {
                     return null;
                 } else {
-                    return new InvalidInputMenu(library, new MainMenu(library));
+                    return new InvalidInputMenu(library);
                 }
             }
         };

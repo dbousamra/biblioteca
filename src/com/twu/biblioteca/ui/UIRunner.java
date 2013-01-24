@@ -29,7 +29,7 @@ public class UIRunner {
 
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             try {
-                String input = requestInput(br, currentMenu);
+                String input = requestInput(br);
                 if (!input.equals("")) {
                     MenuItem nextMenu = currentMenu.requestInput().handleInput(input);
                     if (nextMenu != null) {
@@ -42,17 +42,16 @@ public class UIRunner {
             } catch (IOException e) {
                 throw new RuntimeException("Unable to read input from user");
             }
-//            clearConsole();
+            clearConsole();
         }
     }
 
-    private String requestInput(BufferedReader br, MenuItem currentMenu) throws IOException {
-//        String input = "";
-//        while (input.isEmpty()) {
-//            input = br.readLine();
-//        }
-//        return input;
-        return br.readLine();
+    private String requestInput(BufferedReader br) throws IOException {
+        String input = "";
+        while (input.isEmpty()) {
+            input = br.readLine();
+        }
+        return input;
     }
 
     private void clearConsole() {

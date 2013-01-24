@@ -12,7 +12,7 @@ public class UnderConstructionMenu implements InputHandler {
     }
 
     public String promptUser() {
-        return "Press enter to return to main menu.";
+        return "Press <Any Key> + <Enter> to return to main menu.";
     }
 
     public MenuItem handleInput(String input) {
