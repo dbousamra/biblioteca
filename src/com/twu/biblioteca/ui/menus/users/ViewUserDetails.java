@@ -1,8 +1,9 @@
-package com.twu.biblioteca.ui.menus;
+package com.twu.biblioteca.ui.menus.users;
 
 import com.twu.biblioteca.Library;
 import com.twu.biblioteca.ui.InputHandler;
 import com.twu.biblioteca.ui.MenuItem;
+import com.twu.biblioteca.ui.menus.UnderConstructionMenu;
 
 public class ViewUserDetails implements MenuItem {
 
@@ -12,12 +13,10 @@ public class ViewUserDetails implements MenuItem {
         this.library = library;
     }
 
-    @Override
     public String output() {
         return "Please talk to a Librarian. Thank you.";
     }
 
-    @Override
     public InputHandler requestInput() {
         return new UnderConstructionMenu(library);
     }

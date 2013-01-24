@@ -1,21 +1,21 @@
-package com.twu.biblioteca.ui.menus.reservations;
+package com.twu.biblioteca.ui.menus.books;
 
 import com.twu.biblioteca.Library;
 import com.twu.biblioteca.ui.InputHandler;
 import com.twu.biblioteca.ui.MenuItem;
 import com.twu.biblioteca.ui.menus.UnderConstructionMenu;
 
-public class BookReservedUnsuccessfully implements MenuItem {
+public class BookReservedSuccessfully implements MenuItem {
 
     private final Library library;
 
-    public BookReservedUnsuccessfully(Library library) {
+    public BookReservedSuccessfully(Library library) {
         this.library = library;
     }
 
     @Override
     public String output() {
-        return "Sorry we don't have that book yet.";
+        return "Thank You! Enjoy the book.";
     }
 
     @Override

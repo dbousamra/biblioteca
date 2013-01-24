@@ -1,10 +1,8 @@
-package com.twu.biblioteca.ui.menus.reservations;
+package com.twu.biblioteca.ui.menus.books;
 
 import com.twu.biblioteca.Library;
 import com.twu.biblioteca.items.BookNotFoundException;
-import com.twu.biblioteca.ui.InputHandler;
-import com.twu.biblioteca.ui.MenuItem;
-import com.twu.biblioteca.ui.menus.BrowseBooks;
+import com.twu.biblioteca.ui.*;
 
 public class ReserveBookMenu extends BrowseBooks {
 

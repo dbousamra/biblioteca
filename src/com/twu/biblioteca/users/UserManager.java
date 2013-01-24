@@ -4,8 +4,4 @@ public class UserManager {
 
     public UserManager() { }
 
-    public boolean login() {
-        return true;
-    }
-
 }

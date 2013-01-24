@@ -11,12 +11,10 @@ public class UnderConstructionMenu implements InputHandler {
         this.library = library;
     }
 
-    @Override
     public String promptUser() {
         return "Press enter to return to main menu.";
     }
 
-    @Override
     public MenuItem handleInput(String input) {
         return new MainMenu(library);
     }

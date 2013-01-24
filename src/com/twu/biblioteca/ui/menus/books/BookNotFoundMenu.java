@@ -1,8 +1,7 @@
-package com.twu.biblioteca.ui.menus.reservations;
+package com.twu.biblioteca.ui.menus.books;
 
 import com.twu.biblioteca.Library;
-import com.twu.biblioteca.ui.InputHandler;
-import com.twu.biblioteca.ui.MenuItem;
+import com.twu.biblioteca.ui.*;
 
 public class BookNotFoundMenu implements MenuItem {
     private final Library library;
@@ -13,20 +12,17 @@ public class BookNotFoundMenu implements MenuItem {
         this.library = library;
     }
 
-    @Override
     public String output() {
-        return "Sorry, that book was not found. Please make sure you entered a valid ISBN.";
+        return "Sorry, the ISBN: " + isbn + " did not correspond to a book in our library.\n" +
+               "Please make sure you entered a valid ISBN.";
     }
 
-    @Override
     public InputHandler requestInput() {
         return new InputHandler() {
-            @Override
             public String promptUser() {
                 return "Please press enter to try again.";
             }
 
-            @Override
             public MenuItem handleInput(String input) {
                 return new ReserveBookMenu(library);
             }
