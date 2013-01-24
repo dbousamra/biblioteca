@@ -13,9 +13,4 @@ public class BookTest {
         assertEquals(book.getISBN(), "9780140177398");
         assertEquals(book.getTitle(), "Of Mice and Men");
     }
-
-    @Test
-    public void testSuccessMessage() throws Exception {
-        Book book = new Book("9780201310054", "Effective Java");
-    }
 }

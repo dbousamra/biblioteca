@@ -23,13 +23,16 @@ public class Book {
         return ISBN + " - " + title;
     }
 
+    /*
+      Equals only tests on the ISBN since that is the unique ID, not the name etc
+      Use in Maps and Sets.
+    */
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
         Book book = (Book) o;
-
         if (ISBN != null ? !ISBN.equals(book.ISBN) : book.ISBN != null) return false;
 
         return true;

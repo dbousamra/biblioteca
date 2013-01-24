@@ -5,6 +5,7 @@ import com.twu.biblioteca.items.Book;
 import com.twu.biblioteca.ui.InputHandler;
 import com.twu.biblioteca.Library;
 import com.twu.biblioteca.ui.MenuItem;
+import com.twu.biblioteca.ui.menus.reservations.ReserveBookMenu;
 
 import java.util.Collection;
 
@@ -43,7 +44,7 @@ public class BrowseBooks implements MenuItem {
                 } else if (menuItem == 2) {
                     return new MainMenu(library);
                 } else {
-                    return new MainMenu(library);
+                    return new BrowseBooks(library);
                 }
             }
         };

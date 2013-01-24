@@ -5,9 +5,10 @@ import com.twu.biblioteca.items.Book;
 
 import java.util.*;
 
-public class BookManager extends ManagerHelper<String, Book> {
+public class BookManager extends Manager<String, Book> {
 
     private Set<Book> reserved = new HashSet<Book>();
+
     /*
     Helper method for books.
     */
@@ -29,7 +30,12 @@ public class BookManager extends ManagerHelper<String, Book> {
         }
     }
 
-    public boolean isBookReserved(String isbn) {
-        return reserved.contains(getItem(isbn));
+    public boolean isBookReserved(String isbn) throws BookNotFoundException {
+        if(getItem(isbn) != null) {
+            return reserved.contains(getItem(isbn));
+        } else {
+            throw new BookNotFoundException(isbn);
+        }
+
     }
 }

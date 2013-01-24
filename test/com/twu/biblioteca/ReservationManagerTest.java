@@ -1,6 +1,7 @@
 package com.twu.biblioteca;
 
 import com.twu.biblioteca.items.Book;
+import com.twu.biblioteca.items.BookNotFoundException;
 import com.twu.biblioteca.library.BookManager;
 import org.junit.Test;
 import java.util.Collection;
@@ -74,5 +75,19 @@ public class ReservationManagerTest {
         rm.reserveBook(book.getISBN());
         boolean result = rm.reserveBook(book.getISBN());
         assertEquals(false, result);
+    }
+
+    @Test(expected=BookNotFoundException.class)
+    public void testReserveUnknownBook() throws Exception {
+        BookManager rm = new BookManager();
+        boolean reserved = rm.reserveBook("randomISBN");
+        assertFalse(reserved);
+    }
+
+    @Test(expected=BookNotFoundException.class)
+    public void testCheckIsBookReserveOnUnknownBook() throws Exception {
+        BookManager rm = new BookManager();
+        boolean reserved = rm.isBookReserved("randomISBN");
+        assertFalse(reserved);
     }
 }

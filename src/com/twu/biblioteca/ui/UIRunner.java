@@ -3,6 +3,7 @@ package com.twu.biblioteca.ui;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Stack;
 
 public class UIRunner {
 
@@ -12,15 +13,15 @@ public class UIRunner {
         this.startingMenu = startingMenu;
     }
 
-    private void clearConsole() {
-        for (int i = 0; i < 100; i++) {
-            System.out.println();
-        }
-    }
-
     public void run() {
-        MenuItem currentMenu = this.startingMenu;
+        Stack<MenuItem> uiStack = new Stack<MenuItem>();
+        uiStack.push(this.startingMenu);
         while(true) {
+            if (uiStack.isEmpty()) {
+                break;
+            }
+            MenuItem currentMenu = uiStack.pop();
+
             System.out.println("\n");
             System.out.println(currentMenu.output());
             System.out.println("=======================================");
@@ -28,12 +29,29 @@ public class UIRunner {
 
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             try {
-                String input = br.readLine();
-                currentMenu = currentMenu.requestInput().handleInput(input);
+                String input = requestInput(br);
+                MenuItem nextMenu = currentMenu.requestInput().handleInput(input);
+                if (nextMenu != null) {
+                    uiStack.push(nextMenu);
+                }
             } catch (IOException e) {
                 throw new RuntimeException("Unable to read input from user");
             }
             clearConsole();
+        }
+    }
+
+    private String requestInput(BufferedReader br) throws IOException {
+        String input = "";
+        while (input.isEmpty()) {
+            input = br.readLine();
+        }
+        return input;
+    }
+
+    private void clearConsole() {
+        for (int i = 0; i < 100; i++) {
+            System.out.println();
         }
     }
 }

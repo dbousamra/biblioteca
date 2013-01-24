@@ -2,6 +2,9 @@ package com.twu.biblioteca.ui.menus;
 import com.twu.biblioteca.Library;
 import com.twu.biblioteca.ui.*;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class MainMenu implements MenuItem {
 
     private final Library library;
@@ -18,6 +21,7 @@ public class MainMenu implements MenuItem {
 
     public InputHandler requestInput() {
         return new InputHandler() {
+
             public String promptUser() {
                 return "Please select an option:";
             }
@@ -29,7 +33,7 @@ public class MainMenu implements MenuItem {
                 } else if (menuItem == 2) {
                     return new ViewUserDetails(library);
                 } else {
-                    return new MainMenu(library);
+                    return null;
                 }
             }
         };
