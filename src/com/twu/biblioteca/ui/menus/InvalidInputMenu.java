@@ -21,16 +21,8 @@ public class InvalidInputMenu implements MenuItem {
 
     @Override
     public InputHandler requestInput() {
-        return new InputHandler() {
-            @Override
-            public String promptUser() {
-                return "";
-            }
-
-            @Override
-            public MenuItem handleInput(String input) {
-                return previous;
-            }
-        };
+        return new UnderConstructionMenu(library);
     }
+
+
 }

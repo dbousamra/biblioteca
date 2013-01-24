@@ -22,31 +22,37 @@ public class UIRunner {
             }
             MenuItem currentMenu = uiStack.pop();
 
-            System.out.println("\n");
+            System.out.println("=======================================");
             System.out.println(currentMenu.output());
             System.out.println("=======================================");
             System.out.println(currentMenu.requestInput().promptUser());
 
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             try {
-                String input = requestInput(br);
-                MenuItem nextMenu = currentMenu.requestInput().handleInput(input);
-                if (nextMenu != null) {
-                    uiStack.push(nextMenu);
+                String input = requestInput(br, currentMenu);
+                if (!input.equals("")) {
+                    MenuItem nextMenu = currentMenu.requestInput().handleInput(input);
+                    if (nextMenu != null) {
+                        uiStack.push(nextMenu);
+                    }
+                } else {
+                    uiStack.push(currentMenu);
                 }
+
             } catch (IOException e) {
                 throw new RuntimeException("Unable to read input from user");
             }
-            clearConsole();
+//            clearConsole();
         }
     }
 
-    private String requestInput(BufferedReader br) throws IOException {
-        String input = "";
-        while (input.isEmpty()) {
-            input = br.readLine();
-        }
-        return input;
+    private String requestInput(BufferedReader br, MenuItem currentMenu) throws IOException {
+//        String input = "";
+//        while (input.isEmpty()) {
+//            input = br.readLine();
+//        }
+//        return input;
+        return br.readLine();
     }
 
     private void clearConsole() {

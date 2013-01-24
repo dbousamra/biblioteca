@@ -20,7 +20,7 @@
     <file path="/MenuItem.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1358988724229" ignored="false" />
     <file path="/InputHandler.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1358918200740" ignored="false" />
     <file path="/MainMenu.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1358999884927" ignored="false" />
-    <file path="/UIRunner.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1358988829894" ignored="false" />
+    <file path="/UIRunner.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1359003879947" ignored="false" />
     <file path="/BrowseBooks.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1358991230701" ignored="false" />
     <file path="/ViewUserDetails.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1358988787986" ignored="false" />
     <file path="/UnderConstructionMenu.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1358988113512" ignored="false" />
@@ -31,7 +31,7 @@
     <file path="/BookReservedSuccessfully.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1358991221290" ignored="false" />
     <file path="/BookReservedUnsuccessfully.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1358991218917" ignored="false" />
     <file path="/BookNotFoundMenu.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1358991915038" ignored="false" />
-    <file path="/InvalidInputMenu.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1358999849866" ignored="false" />
+    <file path="/InvalidInputMenu.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1359003720162" ignored="false" />
     <file path="$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/InvalidInputMenuImpl.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1358999707336" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,6 +82,22 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/UIRunner.java" line="32" class="com.twu.biblioteca.ui.UIRunner" package="com.twu.biblioteca.ui">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -95,20 +111,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/MainMenu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="38" column="10" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookNotFoundMenu.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/BookNotFoundMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,54 +119,8 @@
       <file leaf-file-name="UnderConstructionMenu.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/UnderConstructionMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewUserDetails.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/users/ViewUserDetails.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BrowseBooks.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/BrowseBooks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="28" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReserveBookMenu.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/ReserveBookMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="10" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InvalidInputMenu.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/InvalidInputMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="5" selection-start="539" selection-end="539" vertical-scroll-proportion="0.4391892">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="6" column="13" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -171,18 +128,43 @@
       <file leaf-file-name="BookReservedSuccessfully.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/BookReservedSuccessfully.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="5" selection-start="284" selection-end="409" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="17" column="3" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookReservedUnsuccessfully.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/BookReservedUnsuccessfully.java">
+      <file leaf-file-name="BrowseBooks.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/BrowseBooks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
+            <state line="42" column="38" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReserveBookMenu.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/ReserveBookMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="28" selection-start="813" selection-end="876" vertical-scroll-proportion="0.8426966">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UIRunner.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/UIRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="5" selection-start="1801" selection-end="1801" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvalidInputMenu.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/InvalidInputMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="50" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -200,7 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/BookReservedUnsuccessfully.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/BookReservedSuccessfully.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/ReserveBookMenu.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/reservations/BookReservedUnsuccessfully.java" />
@@ -216,6 +197,7 @@
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/InvalidInputMenuImpl.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/MainMenu.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/InvalidInputMenu.java" />
+        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/ui/UIRunner.java" />
       </list>
     </option>
   </component>
@@ -357,10 +339,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblioteca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblioteca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblioteca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="books" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,9 +392,9 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -503,7 +515,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="biblioteca" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -615,23 +633,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="22" width="1420" height="815" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.460272" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.45740873" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.49749464" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.49749464" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15962778" sideWeight="0.36978418" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19255547" sideWeight="0.7122302" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.49749464" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15962778" sideWeight="0.2028777" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2877698" sideWeight="0.53758055" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2877698" sideWeight="0.45740873" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.49463135" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19255547" sideWeight="0.2028777" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19255547" sideWeight="0.71366906" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.49176806" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19255547" sideWeight="0.2028777" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28633094" sideWeight="0.5518969" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28633094" sideWeight="0.44309235" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.49749464" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -700,15 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/MenuItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
@@ -746,60 +755,27 @@
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/users/ViewUserDetails.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/UnderConstructionMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/BookNotFoundMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="0" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/BookReservedUnsuccessfully.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="7" column="13" selection-start="233" selection-end="233" vertical-scroll-proportion="0.22435898">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/BrowseBooks.java">
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="28" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/BookReservedSuccessfully.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="284" selection-end="409" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/ReserveBookMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="10" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="0.3846154">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -809,18 +785,51 @@
     <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="10" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/InvalidInputMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="50" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/InvalidInputMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/UIRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="5" selection-start="539" selection-end="539" vertical-scroll-proportion="0.4391892">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="55" column="5" selection-start="1801" selection-end="1801" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/UnderConstructionMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/BookReservedSuccessfully.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="3" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/BrowseBooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="38" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/ReserveBookMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="28" selection-start="813" selection-end="876" vertical-scroll-proportion="0.8426966">
+          <folding />
         </state>
       </provider>
     </entry>
