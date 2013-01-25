@@ -18,6 +18,8 @@ public class UIRunner {
     public void run() {
         Stack<MenuItem> uiStack = new Stack<MenuItem>();
         uiStack.push(this.startingMenu);
+
+        displayWelcome();
         while(true) {
             if (uiStack.isEmpty()) {
                 break;
@@ -46,6 +48,12 @@ public class UIRunner {
             }
             clearConsole();
         }
+    }
+
+    public void displayWelcome() {
+        System.out.println("---------------------------------------");
+        System.out.println("Welcome to Biblioteca v0.1");
+        System.out.println("---------------------------------------");
     }
 
     private String requestInput(BufferedReader br) throws IOException {

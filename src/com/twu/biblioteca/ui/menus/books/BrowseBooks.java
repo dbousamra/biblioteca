@@ -22,7 +22,7 @@ public class BrowseBooks implements MenuItem {
     public String output() {
         Collection<Book> books = library.getRegistrationManager().getAllItems();
         if (!books.isEmpty()) {
-            return Joiner.on('\n').join(books);
+            return books.size() + " books found\n" + Joiner.on('\n').join(books);
         } else {
             return "Their are currently no books in the library.";
         }
