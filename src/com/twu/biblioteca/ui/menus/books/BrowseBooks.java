@@ -39,12 +39,16 @@ public class BrowseBooks implements MenuItem {
 
             @Override
             public MenuItem handleInput(String input) {
-                int menuItem = Integer.parseInt(input);
-                if (menuItem == 1) {
-                    return new ReserveBookMenu(library);
-                } else if (menuItem == 2) {
-                    return new MainMenu(library);
-                } else {
+                try {
+                    int menuItem = Integer.parseInt(input);
+                    if (menuItem == 1) {
+                        return new ReserveBookMenu(library);
+                    } else if (menuItem == 2) {
+                        return new MainMenu(library);
+                    } else {
+                        return new InvalidInputMenu(library);
+                    }
+                } catch(NumberFormatException e) {
                     return new InvalidInputMenu(library);
                 }
             }

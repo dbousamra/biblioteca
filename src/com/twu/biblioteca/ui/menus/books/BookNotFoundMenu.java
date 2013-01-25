@@ -20,7 +20,7 @@ public class BookNotFoundMenu implements MenuItem {
     public InputHandler requestInput() {
         return new InputHandler() {
             public String promptUser() {
-                return "Please press enter to try again.";
+                return "Press <Any Key> + <Enter> to return to main menu.";
             }
 
             public MenuItem handleInput(String input) {

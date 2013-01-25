@@ -25,16 +25,21 @@ public class MainMenu implements MenuItem {
             }
 
             public MenuItem handleInput(String input) {
-                int menuItem = Integer.parseInt(input);
-                if (menuItem == 1) {
-                    return new BrowseBooks(library);
-                } else if (menuItem == 2) {
-                    return new ViewUserDetails(library);
-                } else if (menuItem == 3) {
-                    return null;
-                } else {
+                try {
+                    int menuItem = Integer.parseInt(input);
+                    if (menuItem == 1) {
+                        return new BrowseBooks(library);
+                    } else if (menuItem == 2) {
+                        return new ViewUserDetails(library);
+                    } else if (menuItem == 3) {
+                        return null;
+                    } else {
+                        return new InvalidInputMenu(library);
+                    }
+                } catch(NumberFormatException e) {
                     return new InvalidInputMenu(library);
                 }
+
             }
         };
     }
