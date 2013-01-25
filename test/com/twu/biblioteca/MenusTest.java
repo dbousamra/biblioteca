@@ -13,9 +13,9 @@ import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 public class MenusTest {
-
-//    final ByteArrayOutputStream s
-
+    /*
+    Handy for redirecting Sysout to something testable.
+    */
     public ByteArrayOutputStream directOutputStream(){
         ByteArrayOutputStream screenOutput = new ByteArrayOutputStream();
         PrintStream ps = new PrintStream(screenOutput);

@@ -1,7 +1,5 @@
 package com.twu.biblioteca.ui;
 
-import com.twu.biblioteca.ui.menus.InvalidInputMenu;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -34,15 +32,10 @@ public class UIRunner {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             try {
                 String input = requestInput(br);
-//                if () {
-//                    uiStack.push(currentMenu);
-//                } else {
-                    MenuItem nextMenu = currentMenu.requestInput().handleInput(input);
-                    if (nextMenu != null) {
-                        uiStack.push(nextMenu);
-                    }
-//                }
-//
+                MenuItem nextMenu = currentMenu.requestInput().handleInput(input);
+                if (nextMenu != null) {
+                    uiStack.push(nextMenu);
+                }
             } catch (IOException e) {
                 throw new RuntimeException("Unable to read input from user");
             }
@@ -68,14 +61,5 @@ public class UIRunner {
         for (int i = 0; i < 100; i++) {
             System.out.println();
         }
-    }
-
-    private boolean isInteger(String s) {
-        try {
-            Integer.parseInt(s);
-        } catch(NumberFormatException e) {
-            return false;
-        }
-        return true;
     }
 }
