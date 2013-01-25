@@ -51,7 +51,12 @@ public class MenusTest {
     @Test
     public void testErrorThrownIfInvalidInputEntered() throws Exception {
         MainMenu menu = new MainMenu(new Library());
-//        MenuItem newMenu = menu.requestInput().handleInput();
-//        System.out.println(newMenu.output());
+        MenuItem newMenu = menu.requestInput().handleInput("invalid string");
+        assertThat(newMenu.output(), containsString("valid option"));
+    }
+
+    @Test
+    public void testName() throws Exception {
+
     }
 }
