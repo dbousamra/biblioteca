@@ -110,7 +110,7 @@ public class MenusTest {
     }
 
     @Test
-    public void testUserCanCheckCredentials() throws Exception {
+    public void shouldTellUserToTalkToLibrarianForUserCreds() throws Exception {
         MenuItem menu = new MainMenu(new Library());
         MenuItem userCreds = menu.requestInput().handleInput("2");
         assertThat(userCreds.output(), containsString("Please talk to a Librarian. Thank you"));
