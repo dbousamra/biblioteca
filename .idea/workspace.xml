@@ -108,10 +108,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReservationManagerTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/managers/ReservationManagerTest.java">
+      <file leaf-file-name="BookReservationManagerTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/managers/BookReservationManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="278" selection-end="278" vertical-scroll-proportion="0.28784648">
+            <state line="12" column="60" selection-start="401" selection-end="401" vertical-scroll-proportion="0.38379532">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/MainMenu.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/InvalidInputMenu.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/BookNotFoundMenu.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/BrowseBooks.java" />
@@ -163,6 +162,7 @@
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/items/Movie.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/MoviesTest.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/managers/ReservationManagerTest.java" />
+        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/managers/BookReservationManagerTest.java" />
       </list>
     </option>
   </component>
@@ -593,7 +593,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="22" width="1420" height="815" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.45740873" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -601,7 +601,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.49463135" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.49749464" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19255547" sideWeight="0.23309353" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19255547" sideWeight="0.7151079" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19255547" sideWeight="0.7151079" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.49176806" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19255547" sideWeight="0.2028777" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28489208" sideWeight="0.5576235" order="7" side_tool="true" content_ui="tabs" />
@@ -772,9 +772,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/managers/ReservationManagerTest.java">
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/managers/BookReservationManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="278" selection-end="278" vertical-scroll-proportion="0.28784648">
+        <state line="12" column="60" selection-start="401" selection-end="401" vertical-scroll-proportion="0.38379532">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -7,7 +7,7 @@ import org.junit.Test;
 import java.util.Collection;
 import static org.junit.Assert.*;
 
-public class ReservationManagerTest {
+public class BookReservationManagerTest {
 
     private Book getMockBook() {
         return new Book("9780140177398", "Of Mice and Men");
