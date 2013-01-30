@@ -1,4 +1,4 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.managers;
 
 import com.twu.biblioteca.items.Book;
 import com.twu.biblioteca.items.BookNotFoundException;

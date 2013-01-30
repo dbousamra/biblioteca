@@ -1,5 +1,6 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.menus;
 
+import com.twu.biblioteca.Library;
 import com.twu.biblioteca.ui.MenuItem;
 import com.twu.biblioteca.ui.UIRunner;
 import com.twu.biblioteca.ui.menus.MainMenu;

@@ -1,4 +1,4 @@
-package com.twu.biblioteca;
+package com.twu.biblioteca.items;
 
 import com.twu.biblioteca.items.Movie;
 import org.junit.Test;
