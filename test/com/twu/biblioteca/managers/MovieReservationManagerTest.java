@@ -1,6 +1,7 @@
 package com.twu.biblioteca.managers;
 
 import com.twu.biblioteca.items.Movie;
+import com.twu.biblioteca.library.MovieManager;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

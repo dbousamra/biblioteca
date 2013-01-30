@@ -1,4 +1,4 @@
-package com.twu.biblioteca.managers;
+package com.twu.biblioteca.library;
 
 import com.twu.biblioteca.items.Movie;
 

@@ -5,7 +5,7 @@ import com.twu.biblioteca.items.Book;
 
 import java.util.*;
 
-public class BookManager extends Manager<String, Book> {
+public class BookManager extends Reserver<String, Book> {
 
     private final Set<Book> reserved = new HashSet<Book>();
 

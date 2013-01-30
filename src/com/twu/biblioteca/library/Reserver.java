@@ -2,7 +2,7 @@ package com.twu.biblioteca.library;
 
 import java.util.*;
 
-public class Manager<K, V> {
+public class Reserver<K, V> {
 
     private final Map<K, V> contents = new HashMap<K, V>();
 
