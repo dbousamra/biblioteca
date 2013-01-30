@@ -1,7 +1,6 @@
 package com.twu.biblioteca;
 
 import com.twu.biblioteca.items.Movie;
-import com.twu.biblioteca.items.Rating;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
@@ -11,16 +10,16 @@ public class MoviesTest {
 
     @Test
     public void testCanConstructBookAndIsNotNull() throws Exception {
-        Movie movie = new Movie("Sholay", "1975", "Ramesh Sippy", Rating.NA);
+        Movie movie = new Movie("Sholay", "1975", "Ramesh Sippy", false);
         assertNotNull(movie);
     }
 
     @Test
     public void testCanConstructBookAndFieldsMatch() throws Exception {
-        Movie movie = new Movie("Sholay", "1975", "Ramesh Sippy", Rating.NA);
+        Movie movie = new Movie("Sholay", "1975", "Ramesh Sippy", false);
         assertEquals("Sholay", movie.getTitle());
         assertEquals("1975", movie.getYear());
         assertEquals("Ramesh Sippy", movie.getDirector());
-        assertEquals(Rating.NA, movie.getRating());
+        assertEquals(false, movie.isRated());
     }
 }
