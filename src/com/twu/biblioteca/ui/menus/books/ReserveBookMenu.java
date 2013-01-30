@@ -22,7 +22,7 @@ public class ReserveBookMenu extends BrowseBooks {
             @Override
             public MenuItem handleInput(String isbn) {
                 try {
-                    boolean reserved = library.getRegistrationManager().reserveBook(isbn);
+                    boolean reserved = library.getBookManager().reserveBook(isbn);
                     if (reserved) {
                         return new BookReservedSuccessfully(library);
                     } else {

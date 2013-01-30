@@ -20,7 +20,7 @@ public class BrowseBooks implements MenuItem {
 
     @Override
     public String output() {
-        Collection<Book> books = library.getRegistrationManager().getAllItems();
+        Collection<Book> books = library.getBookManager().getAllItems();
         if (!books.isEmpty()) {
             return books.size() + " books found\n" + Joiner.on('\n').join(books);
         } else {

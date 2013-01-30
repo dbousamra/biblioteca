@@ -93,7 +93,7 @@ public class MenusTest {
     public void testUserCanReserveBookUnsuccessfully() throws Exception {
         String isbn = "9780684801520";
         Library library = new Library();
-        library.getRegistrationManager().reserveBook(isbn);
+        library.getBookManager().reserveBook(isbn);
         MenuItem menu = new MainMenu(library);
         MenuItem browseBooks = menu.requestInput().handleInput("1");
         MenuItem reserveBookMenu = browseBooks.requestInput().handleInput("1");
