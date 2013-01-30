@@ -38,6 +38,8 @@
     <file path="/MoviesTest.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1359505420223" ignored="false" />
     <file path="/Movie.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1359505396139" ignored="false" />
     <file path="/Rating.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1359505297797" ignored="false" />
+    <file path="/MovieReservationManagerTest.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1359505915151" ignored="false" />
+    <file path="/BookReservationManagerTest.java" changelist="9fae96e0-62a6-4d41-acd8-ff6910d55cb4" time="1359505922075" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +113,18 @@
       <file leaf-file-name="BookReservationManagerTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/managers/BookReservationManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="60" selection-start="401" selection-end="401" vertical-scroll-proportion="0.38379532">
+            <state line="16" column="24" selection-start="443" selection-end="443" vertical-scroll-proportion="0.5117271">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MovieReservationManagerTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/managers/MovieReservationManagerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="5" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/InvalidInputMenu.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/BookNotFoundMenu.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/ui/menus/books/BrowseBooks.java" />
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/ui/MenuItem.java" />
@@ -162,6 +174,7 @@
         <option value="$PROJECT_DIR$/src/com/twu/biblioteca/items/Movie.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/MoviesTest.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/managers/ReservationManagerTest.java" />
+        <option value="$PROJECT_DIR$/test/com/twu/biblioteca/managers/MovieReservationManagerTest.java" />
         <option value="$PROJECT_DIR$/test/com/twu/biblioteca/managers/BookReservationManagerTest.java" />
       </list>
     </option>
@@ -772,9 +785,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/managers/MovieReservationManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="5" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/twu/biblioteca/managers/BookReservationManagerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="60" selection-start="401" selection-end="401" vertical-scroll-proportion="0.38379532">
+        <state line="16" column="24" selection-start="443" selection-end="443" vertical-scroll-proportion="0.5117271">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

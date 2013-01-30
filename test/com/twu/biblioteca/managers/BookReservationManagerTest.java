@@ -14,7 +14,7 @@ public class BookReservationManagerTest {
     }
 
     @Test
-    public void testReservationManagerCreation() throws Exception {
+    public void testBookReservationManagerCreation() throws Exception {
         BookManager rm = new BookManager();
         assertNotNull(rm);
     }
