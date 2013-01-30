@@ -1,7 +1,6 @@
 package com.twu.biblioteca.managers;
 
 import com.twu.biblioteca.items.Movie;
-import com.twu.biblioteca.library.BookManager;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -24,7 +23,7 @@ public class MovieReservationManagerTest {
         Movie movie = getMockMovie();
         MovieManager mrm = new MovieManager();
         mrm.addMovie(movie);
-        assertEquals(1, mrm.getItemCount());
+        assertEquals(1, mrm.getMovieCount());
     }
 
     @Test
@@ -32,6 +31,6 @@ public class MovieReservationManagerTest {
        Movie movie = getMockMovie();
        MovieManager mrm = new MovieManager();
        mrm.addMovie(movie);
-       assertEquals(1, mrm.getListOfAllMovies().size());
+       assertEquals(1, mrm.getAllMovies().size());
     }
 }
