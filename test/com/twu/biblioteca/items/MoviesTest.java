@@ -1,6 +1,5 @@
 package com.twu.biblioteca.items;
 
-import com.twu.biblioteca.items.Movie;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
