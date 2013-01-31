@@ -52,4 +52,9 @@ public class Movie {
         result = 31 * result + (rating != null ? rating.hashCode() : 0);
         return result;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s %-25s %-25s %s", year, title, director, rating);
+    }
 }

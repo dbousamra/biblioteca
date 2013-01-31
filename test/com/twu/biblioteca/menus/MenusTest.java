@@ -46,7 +46,7 @@ public class MenusTest {
     @Test
     public void canSelectAMenuOption() throws Exception {
         MenuItem menu = new MainMenu(new Library());
-        MenuItem newMenu = menu.requestInput().handleInput("2");
+        MenuItem newMenu = menu.requestInput().handleInput("3");
         assertTrue(newMenu.output().length() > 0);
     }
 
@@ -111,9 +111,15 @@ public class MenusTest {
     }
 
     @Test
-    public void shouldTellUserToTalkToLibrarianForUserCreds() throws Exception {
+    public void testShouldTellUserToTalkToLibrarianForUserCreds() throws Exception {
         MenuItem menu = new MainMenu(new Library());
-        MenuItem userCreds = menu.requestInput().handleInput("2");
+        MenuItem userCreds = menu.requestInput().handleInput("3");
         assertThat(userCreds.output(), containsString("Please talk to a Librarian. Thank you"));
+    }
+
+    @Test
+    public void testUserShouldSeeBrowseMoviesMenuOption() throws Exception {
+        MenuItem menu = new MainMenu(new Library());
+        assertThat(menu.output(), containsString("Browse Movies"));
     }
 }
