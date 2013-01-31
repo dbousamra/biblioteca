@@ -10,5 +10,10 @@ public enum Rating {
     private Rating(int value) {
         this.value = value;
     }
+
+    @Override
+    public String toString() {
+        return value + "/10";
+    }
 }
 

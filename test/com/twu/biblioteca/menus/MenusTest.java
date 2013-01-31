@@ -122,4 +122,11 @@ public class MenusTest {
         MenuItem menu = new MainMenu(new Library());
         assertThat(menu.output(), containsString("Browse Movies"));
     }
+
+    @Test
+    public void testUserShouldSeeListOfMoviesWhenSelectBrowseMovies() throws Exception {
+        MenuItem menu = new MainMenu(new Library());
+        MenuItem browseMovies = menu.requestInput().handleInput("2");
+        assertThat(browseMovies.output(), containsString("movies found"));
+    }
 }

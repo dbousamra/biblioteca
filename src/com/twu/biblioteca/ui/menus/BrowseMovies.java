@@ -21,8 +21,10 @@ public class BrowseMovies implements MenuItem {
         Collection<Movie> movies = library.getMovieManager().getAllMovies();
         if (!movies.isEmpty()) {
             return movies.size() + " movies found\n" +
-                   "Title\tYear\tDirector\tRating\n" +
-                    Joiner.on('\n').join(movies);
+                   "---------------------------------------------------------------\n" +
+                   String.format("%s %-25s %-25s %s%n", "Year", "Title", "Director", "Rating") +
+                   "---------------------------------------------------------------\n" +
+                   Joiner.on('\n').join(movies);
         } else {
             return "Their are currently no movies in the library.";
         }
@@ -30,6 +32,6 @@ public class BrowseMovies implements MenuItem {
 
     @Override
     public InputHandler requestInput() {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        return new UnderConstructionMenu(library);
     }
 }

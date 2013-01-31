@@ -25,7 +25,7 @@ public class MoviesTest {
     public void testMoviesToStringIsPaddedCorrectly() throws Exception {
         Movie movie = new Movie("Sholay", "1975", "Ramesh Sippy", Rating.TEN);
         Movie movie2 = new Movie("The Shawshank Redemption", "1994", "Francis Ford Coppola", Rating.TEN);
-        assertEquals("1975 Sholay                    Ramesh Sippy              TEN", movie.toString());
-        assertEquals("1994 The Shawshank Redemption  Francis Ford Coppola      TEN", movie2.toString());
+        assertEquals("1975 Sholay                    Ramesh Sippy              10/10", movie.toString());
+        assertEquals("1994 The Shawshank Redemption  Francis Ford Coppola      10/10", movie2.toString());
     }
 }
