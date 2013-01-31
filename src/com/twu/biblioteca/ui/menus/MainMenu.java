@@ -14,8 +14,9 @@ public class MainMenu implements MenuItem {
 
     public String output() {
         return "1.) Browse Books\n" +
-               "2.) View membership details\n" +
-               "3.) Exit";
+               "2.) Browse Movies\n" +
+               "3.) View membership details\n" +
+               "4.) Exit";
     }
 
     public InputHandler requestInput() {
@@ -30,8 +31,10 @@ public class MainMenu implements MenuItem {
                     if (menuItem == 1) {
                         return new BrowseBooks(library);
                     } else if (menuItem == 2) {
-                        return new ViewUserDetails(library);
+                        return new BrowseMovies(library);
                     } else if (menuItem == 3) {
+                        return new ViewUserDetails(library);
+                    } else if (menuItem == 4) {
                         return null;
                     } else {
                         return new InvalidInputMenu(library);

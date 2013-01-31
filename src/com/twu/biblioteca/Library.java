@@ -54,7 +54,7 @@ public final class Library {
 
         this.movieManager.addMovie(new Movie("Se7en", "1995", "David Fincher", Rating.EIGHT));
         this.movieManager.addMovie(new Movie("Fight Club", "1999", "David Fincher", Rating.NINE));
-        this.movieManager.addMovie(new Movie("The Hobbit - An Unexpected Journey", "2012", "Peter Jackson", Rating.SEVEN));
+        this.movieManager.addMovie(new Movie("The Hobbit", "2012", "Peter Jackson", Rating.SEVEN));
         this.movieManager.addMovie(new Movie("Saving Private Ryan", "1998", "Steven Spielberg", Rating.EIGHT));
         this.movieManager.addMovie(new Movie("Titanic", "1997", "James Cameron", Rating.NINE));
     }
