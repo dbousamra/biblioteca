@@ -10,16 +10,16 @@ public class MoviesTest {
 
     @Test
     public void testCanConstructBookAndIsNotNull() throws Exception {
-        Movie movie = new Movie("Sholay", "1975", "Ramesh Sippy", false);
+        Movie movie = new Movie("Sholay", "1975", "Ramesh Sippy", Rating.TEN);
         assertNotNull(movie);
     }
 
     @Test
     public void testCanConstructBookAndFieldsMatch() throws Exception {
-        Movie movie = new Movie("Sholay", "1975", "Ramesh Sippy", false);
+        Movie movie = new Movie("Sholay", "1975", "Ramesh Sippy", Rating.TEN);
         assertEquals("Sholay", movie.getTitle());
         assertEquals("1975", movie.getYear());
         assertEquals("Ramesh Sippy", movie.getDirector());
-        assertEquals(false, movie.isRated());
+        assertEquals(Rating.TEN, movie.getRating());
     }
 }

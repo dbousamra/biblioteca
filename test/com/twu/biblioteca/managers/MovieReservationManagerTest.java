@@ -1,6 +1,7 @@
 package com.twu.biblioteca.managers;
 
 import com.twu.biblioteca.items.Movie;
+import com.twu.biblioteca.items.Rating;
 import com.twu.biblioteca.library.MovieManager;
 import org.junit.Test;
 
@@ -10,7 +11,7 @@ import static org.junit.Assert.assertNotNull;
 public class MovieReservationManagerTest {
 
     private Movie getMockMovie() {
-        return new Movie("The Shining", "1980", "Stanley Kubrick", true);
+        return new Movie("The Shining", "1980", "Stanley Kubrick", Rating.EIGHT);
     }
 
     @Test
