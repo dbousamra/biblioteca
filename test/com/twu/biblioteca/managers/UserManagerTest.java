@@ -14,6 +14,11 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 
 public class UserManagerTest {
+
+    private User getMockUser() {
+        return new User("111-1111", "somePassword", "Sample User", "s@s.com", "55338008");
+    }
+
     @Test
     public void testUserManagerCreation() throws Exception {
         UserManager userManager = new UserManager();
@@ -23,7 +28,7 @@ public class UserManagerTest {
     @Test
     public void testAddRegisteredUsers() throws Exception {
         UserManager userManager = new UserManager();
-        User user = new User("111-1111", "somePassword");
+        User user = getMockUser();
         userManager.addUser(user);
         assertThat(userManager.getAllUsers(), hasItem(user));
     }
@@ -31,7 +36,7 @@ public class UserManagerTest {
     @Test
     public void testAuthenticateValidUser() throws Exception {
         UserManager userManager = new UserManager();
-        User user = new User("111-1111", "somePassword");
+        User user = getMockUser();
         userManager.addUser(user);
         Optional<User> possibleUser = userManager.authenticateUser("111-1111", "somePassword");
         assertTrue(possibleUser.isPresent());
@@ -41,7 +46,7 @@ public class UserManagerTest {
     @Test
     public void testAuthenticateInvalidUser() throws Exception {
         UserManager userManager = new UserManager();
-        User user = new User("111-1111", "somePassword");
+        User user = getMockUser();
         userManager.addUser(user);
         Optional<User> possibleUser = userManager.authenticateUser("111-1111", "invalidPassword");
         assertFalse(possibleUser.isPresent());

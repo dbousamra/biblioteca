@@ -3,7 +3,6 @@ package com.twu.biblioteca.users;
 import com.google.common.base.Optional;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Iterables;
-import com.twu.biblioteca.items.Movie;
 
 import java.util.Collections;
 import java.util.HashSet;

@@ -1,6 +1,8 @@
 package com.twu.biblioteca.ui.menus;
+
 import com.twu.biblioteca.Library;
-import com.twu.biblioteca.ui.*;
+import com.twu.biblioteca.ui.InputHandler;
+import com.twu.biblioteca.ui.MenuItem;
 import com.twu.biblioteca.ui.menus.books.BrowseBooks;
 import com.twu.biblioteca.ui.menus.users.ViewUserDetails;
 

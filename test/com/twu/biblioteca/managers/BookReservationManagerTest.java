@@ -4,7 +4,9 @@ import com.twu.biblioteca.items.Book;
 import com.twu.biblioteca.items.BookNotFoundException;
 import com.twu.biblioteca.library.BookManager;
 import org.junit.Test;
+
 import java.util.Collection;
+
 import static org.junit.Assert.*;
 
 public class BookReservationManagerTest {

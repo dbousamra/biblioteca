@@ -1,7 +1,8 @@
 package com.twu.biblioteca.ui.menus.books;
 
 import com.twu.biblioteca.Library;
-import com.twu.biblioteca.ui.*;
+import com.twu.biblioteca.ui.InputHandler;
+import com.twu.biblioteca.ui.MenuItem;
 
 public class BookNotFoundMenu implements MenuItem {
     private final Library library;

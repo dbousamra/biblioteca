@@ -2,7 +2,6 @@ package com.twu.biblioteca.ui.menus;
 
 import com.google.common.base.Joiner;
 import com.twu.biblioteca.Library;
-import com.twu.biblioteca.items.Book;
 import com.twu.biblioteca.items.Movie;
 import com.twu.biblioteca.ui.InputHandler;
 import com.twu.biblioteca.ui.MenuItem;

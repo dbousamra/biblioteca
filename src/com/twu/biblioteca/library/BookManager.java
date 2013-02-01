@@ -1,9 +1,10 @@
 package com.twu.biblioteca.library;
 
-import com.twu.biblioteca.items.BookNotFoundException;
 import com.twu.biblioteca.items.Book;
+import com.twu.biblioteca.items.BookNotFoundException;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 public class BookManager extends Reserver<String, Book> {
 
