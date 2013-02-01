@@ -1,9 +1,11 @@
 package com.twu.biblioteca.managers;
 
+import com.google.common.base.Optional;
 import com.twu.biblioteca.users.User;
 import com.twu.biblioteca.users.UserManager;
 import org.junit.Test;
 
+import static junit.framework.TestCase.assertTrue;
 import static org.hamcrest.core.IsCollectionContaining.hasItem;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
@@ -23,5 +25,12 @@ public class UserManagerTest {
         assertThat(userManager.getAllUsers(), hasItem(user));
     }
 
-
+    @Test
+    public void testAuthenticateValidUser() throws Exception {
+        UserManager userManager = new UserManager();
+        User user = new User("111-1111", "somePassword");
+        userManager.addUser(user);
+        Optional<User> possibleUser = userManager.authenticateUser("111-1111", "somePassword");
+        assertTrue(possibleUser.isPresent());
+    }
 }
