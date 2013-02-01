@@ -8,7 +8,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-public class MovieReservationManagerTest {
+public class MovieManagerTest {
 
     private Movie getMockMovie() {
         return new Movie("The Shining", "1980", "Stanley Kubrick", Rating.EIGHT);
