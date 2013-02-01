@@ -1,30 +1,27 @@
 package com.twu.biblioteca.ui.menus.users;
 
-import com.google.common.base.Optional;
 import com.twu.biblioteca.Library;
 import com.twu.biblioteca.ui.InputHandler;
 import com.twu.biblioteca.ui.MenuItem;
 import com.twu.biblioteca.ui.menus.UnderConstructionMenu;
-import com.twu.biblioteca.users.User;
 
-public class ViewUserDetails implements MenuItem {
+public class UserNotLoggedInMenu implements MenuItem {
 
     private final Library library;
 
-    public ViewUserDetails(Library library) {
+    public UserNotLoggedInMenu(Library library) {
         this.library = library;
     }
 
+    @Override
     public String output() {
-        Optional<User> user = library.getUserManager().getCurrentlyLoggedInUser();
-        if (user.isPresent()) {
-            return user.get().toString();
-        } else {
-            return "Please talk to a Librarian. Thank you.";
-        }
+        return "You are not logged in. Please return to the main menu and log in.";
     }
 
+    @Override
     public InputHandler requestInput() {
         return new UnderConstructionMenu(library);
     }
+
+
 }

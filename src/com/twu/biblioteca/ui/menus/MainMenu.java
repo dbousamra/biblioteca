@@ -4,6 +4,8 @@ import com.twu.biblioteca.Library;
 import com.twu.biblioteca.ui.InputHandler;
 import com.twu.biblioteca.ui.MenuItem;
 import com.twu.biblioteca.ui.menus.books.BrowseBooks;
+import com.twu.biblioteca.ui.menus.movies.BrowseMovies;
+import com.twu.biblioteca.ui.menus.users.LoginMenu;
 import com.twu.biblioteca.ui.menus.users.ViewUserDetails;
 
 public class MainMenu implements MenuItem {
@@ -18,7 +20,8 @@ public class MainMenu implements MenuItem {
         return "1.) Browse Books\n" +
                "2.) Browse Movies\n" +
                "3.) View membership details\n" +
-               "4.) Exit";
+               "4.) Login\n" +
+               "5.) Exit";
     }
 
     public InputHandler requestInput() {
@@ -37,6 +40,8 @@ public class MainMenu implements MenuItem {
                     } else if (menuItem == 3) {
                         return new ViewUserDetails(library);
                     } else if (menuItem == 4) {
+                        return new LoginMenu(library);
+                    } else if (menuItem == 5) {
                         return null;
                     } else {
                         return new InvalidInputMenu(library);
@@ -44,7 +49,6 @@ public class MainMenu implements MenuItem {
                 } catch(NumberFormatException e) {
                     return new InvalidInputMenu(library);
                 }
-
             }
         };
     }

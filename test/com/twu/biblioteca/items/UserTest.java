@@ -29,4 +29,10 @@ public class UserTest {
         String validPassword = "somePassword";
         User user = new User(malformedUsername, validPassword, "Sample User", "s@s.com", "55338008");
     }
+
+    @Test
+    public void testUserToStringDisplaysCredentials() throws Exception {
+        User user = getMockUser();
+        assertEquals(user.toString(), "Sample User s@s.com 55338008");
+    }
 }

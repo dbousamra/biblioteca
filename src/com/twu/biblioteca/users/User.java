@@ -64,4 +64,9 @@ public class User {
     public int hashCode() {
         return username != null ? username.hashCode() : 0;
     }
+
+    @Override
+    public String toString() {
+        return name + " " + emailAddress + " " + phoneNumber;
+    }
 }

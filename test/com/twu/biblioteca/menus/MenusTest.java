@@ -73,51 +73,6 @@ public class MenusTest {
     }
 
     @Test
-    public void testUserCanBeginReservingBook() throws Exception {
-        MenuItem menu = new MainMenu(new Library());
-        MenuItem browseBooks = menu.requestInput().handleInput("1");
-        MenuItem reserveBookMenu = browseBooks.requestInput().handleInput("1");
-        assertThat(reserveBookMenu.requestInput().promptUser(), containsString("Please enter"));
-    }
-
-    @Test
-    public void testUserCanReserveBookSuccessfully() throws Exception {
-        MenuItem menu = new MainMenu(new Library());
-        MenuItem browseBooks = menu.requestInput().handleInput("1");
-        MenuItem reserveBookMenu = browseBooks.requestInput().handleInput("1");
-        MenuItem bookReservedSuccessfully = reserveBookMenu.requestInput().handleInput("9780684801520");
-        assertThat(bookReservedSuccessfully.output(), containsString("Thank You!"));
-    }
-
-    @Test
-    public void testUserCanReserveBookUnsuccessfully() throws Exception {
-        String isbn = "9780684801520";
-        Library library = new Library();
-        library.getBookManager().reserveBook(isbn);
-        MenuItem menu = new MainMenu(library);
-        MenuItem browseBooks = menu.requestInput().handleInput("1");
-        MenuItem reserveBookMenu = browseBooks.requestInput().handleInput("1");
-        MenuItem bookReservedUnsuccessfully = reserveBookMenu.requestInput().handleInput("9780684801520");
-        assertThat(bookReservedUnsuccessfully.output(), containsString("Sorry"));
-    }
-
-    @Test
-    public void testUserCantReserveInvalidBook() throws Exception {
-        MenuItem menu = new MainMenu(new Library());
-        MenuItem browseBooks = menu.requestInput().handleInput("1");
-        MenuItem reserveBookMenu = browseBooks.requestInput().handleInput("1");
-        MenuItem bookReservedSuccessfully = reserveBookMenu.requestInput().handleInput("randomStringIsbn");
-        assertThat(bookReservedSuccessfully.output(), containsString("Sorry, the ISBN: " + "randomStringIsbn" + " did not correspond"));
-    }
-
-    @Test
-    public void testShouldTellUserToTalkToLibrarianForUserCreds() throws Exception {
-        MenuItem menu = new MainMenu(new Library());
-        MenuItem userCreds = menu.requestInput().handleInput("3");
-        assertThat(userCreds.output(), containsString("Please talk to a Librarian. Thank you"));
-    }
-
-    @Test
     public void testUserShouldSeeBrowseMoviesMenuOption() throws Exception {
         MenuItem menu = new MainMenu(new Library());
         assertThat(menu.output(), containsString("Browse Movies"));

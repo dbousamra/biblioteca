@@ -14,6 +14,12 @@ public class UserManager {
 
     private Set<User> registeredUsers = new HashSet<User>();
 
+    public Optional<User> getCurrentlyLoggedInUser() {
+        return currentlyLoggedInUser;
+    }
+
+    private Optional<User> currentlyLoggedInUser = Optional.absent();
+
     public Set<User> getAllUsers() {
         return Collections.unmodifiableSet(registeredUsers);
     }
@@ -23,12 +29,14 @@ public class UserManager {
     }
 
     public Optional<User> authenticateUser(final String username, final String password) {
-        return Iterables.tryFind(registeredUsers, new Predicate<User>() {
+        Optional<User> possibleUser =  Iterables.tryFind(registeredUsers, new Predicate<User>() {
             @Override
             public boolean apply(User user) {
                 return user.getUsername().equals(username) &&
                        user.getPassword().equals(password);
             }
         });
+        this.currentlyLoggedInUser = possibleUser;
+        return possibleUser;
     }
 }

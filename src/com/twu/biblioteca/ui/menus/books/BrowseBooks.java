@@ -7,6 +7,7 @@ import com.twu.biblioteca.ui.InputHandler;
 import com.twu.biblioteca.ui.MenuItem;
 import com.twu.biblioteca.ui.menus.InvalidInputMenu;
 import com.twu.biblioteca.ui.menus.MainMenu;
+import com.twu.biblioteca.ui.menus.users.UserNotLoggedInMenu;
 
 import java.util.Collection;
 
@@ -42,7 +43,12 @@ public class BrowseBooks implements MenuItem {
                 try {
                     int menuItem = Integer.parseInt(input);
                     if (menuItem == 1) {
-                        return new ReserveBookMenu(library);
+                        if (library.getUserManager().getCurrentlyLoggedInUser().isPresent()) {
+                            return new ReserveBookMenu(library);
+                        }
+                        else {
+                            return new UserNotLoggedInMenu(library);
+                        }
                     } else if (menuItem == 2) {
                         return new MainMenu(library);
                     } else {

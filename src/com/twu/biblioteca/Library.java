@@ -5,6 +5,7 @@ import com.twu.biblioteca.items.Movie;
 import com.twu.biblioteca.items.Rating;
 import com.twu.biblioteca.library.BookManager;
 import com.twu.biblioteca.library.MovieManager;
+import com.twu.biblioteca.users.User;
 import com.twu.biblioteca.users.UserManager;
 
 public final class Library {
@@ -19,6 +20,7 @@ public final class Library {
 
         seedBooks();
         seedMovies();
+        seedUsers();
     }
 
     public UserManager getUserManager() {
@@ -57,5 +59,9 @@ public final class Library {
         this.movieManager.addMovie(new Movie("The Hobbit", "2012", "Peter Jackson", Rating.SEVEN));
         this.movieManager.addMovie(new Movie("Saving Private Ryan", "1998", "Steven Spielberg", Rating.EIGHT));
         this.movieManager.addMovie(new Movie("Titanic", "1997", "James Cameron", Rating.NINE));
+    }
+
+    private void seedUsers() {
+        this.userManager.addUser(new User("111-1111", "somePassword", "Sample User", "s@s.com", "55338008"));
     }
 }
