@@ -20,7 +20,7 @@ public class UserManagerTest {
         UserManager userManager = new UserManager();
         User user = new User("111-1111", "somePassword");
         userManager.addUser(user);
-        assertThat(userManager.getListOfUsers(), hasItem(user));
+        assertThat(userManager.getAllUsers(), hasItem(user));
     }
 
 
